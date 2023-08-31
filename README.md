@@ -14,7 +14,7 @@ Install npm modules, start mysql server, run server.js
 ## Usage
 start server.js
 
-  ![Screenshot](./assets/images/screenshot13.png)
+  ![Screenshot](./assets/images/Screenshot13.png)
 ## Iicense
 None
 ## How to contribute
@@ -24,4 +24,5 @@ N/A
 ## Questions
 * Github: https://github.com/Unk171
 * You can send your questions to my e-mail: 7353687@gmail.com
+* Video: https://drive.google.com/file/d/1QsTGZXd2Kk5NRIg9j-ZY5Q5zJqxblOIG/view
   
