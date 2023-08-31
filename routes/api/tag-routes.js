@@ -36,9 +36,9 @@ router.post('/', async (req, res) => {
     const tagData = await Tag.create({ tag_name: req.body.tag_name });
 
     let productTagData;
-
+    // Check if tag more than 1 product 
     if (req.body.product_id.length > 0) {
-      // Create product tags for multiple product IDs
+      // Create product tag for multiple products
       const productIdArr = req.body.product_id.map((product_id) => {
         return {
           product_id,
@@ -47,7 +47,7 @@ router.post('/', async (req, res) => {
       });
       await ProductTag.bulkCreate(productIdArr);
     } else {
-      // Create a single product tag for a single product ID
+      // Create a single product tag for a single product
       productTagData = await ProductTag.create({
         product_id: req.body.product_id,
         tag_id: tagData.id,
